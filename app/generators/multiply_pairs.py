@@ -11,7 +11,6 @@ def multiply_pairs(first: Sequence[int], second: Sequence[int]) -> Iterator[int]
     return map(mul, first, second)
     # return map(lambda pair: mul(*pair), zip(first, second))
 
-
 def first_three(products: Iterator[int]) -> list[int]:
     """Получить первые три значения тремя последовательными вызовами next."""
     result: list[int] = []

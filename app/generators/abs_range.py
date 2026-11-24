@@ -4,7 +4,6 @@ from typing import Iterator
 
 DEFAULT_COUNT = 4
 
-
 def abs_range(a: int, b: int) -> Iterator[int]:
     """Лениво отдать модули всех целых чисел от a до b включительно."""
     validate_range(a, b)

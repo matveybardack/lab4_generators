@@ -6,7 +6,6 @@ from app.exceptions import GeneratorStoppedError
 
 _END = object()
 
-
 class _Failure:
     """Контейнер для исключения из рабочего потока."""
 
@@ -15,7 +14,6 @@ class _Failure:
 
 
 Source = Union[Iterator[Any], Callable[[], Iterator[Any]]]
-
 
 class ThreadedGenerator:
     """Итератор, который исполняет исходный генератор в рабочем потоке.
